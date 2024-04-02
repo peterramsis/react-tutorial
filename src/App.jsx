@@ -1,18 +1,20 @@
+import Navbar from "./components/navbar";
 const app = () => {
-   
-  const name = "Peter";
-  const names = ["peter", "james", "jane"];
-  
-  const [ peter, james, jane] = names;
   return (
     <div>
-      <h1 className="p-5 text-3xl font-bold underline text-center">
-      
-        
-        <p>{ peter }</p>
-    </h1>
-    </div>
-  )
- }
+      <Navbar></Navbar>
 
- export default app;
+      <section className="container  mx-auto">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div>col 1</div>
+
+          <div>col 1</div>
+          <div>col 1</div>
+          <div>col 1</div>
+        </section>
+      </section>
+    </div>
+  );
+};
+
+export default app;
