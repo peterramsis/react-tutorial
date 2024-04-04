@@ -7,7 +7,7 @@ const Card = (props) => {
 };
 
 
-card.PropsTypes = {
+Card.PropsTypes = {
     name: PropsTypes.string
 }
 
