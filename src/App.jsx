@@ -1,18 +1,9 @@
 import Navbar from "./components/navbar";
 import Card from "./components/card";
-import List from "./components/list";
+import Api from "./components/api";
 import "./sass/main.scss";
 const app = () => {
-  const items = [
-    {
-      id: 1,
-      name: "Peter",
-    },
-    {
-      id: 2,
-      name: "Ramy",
-    },
-  ];
+
 
   return (
     <div>
@@ -28,7 +19,8 @@ const app = () => {
         </section>
       </div>
 
-      <List items={items} />
+      <Api></Api>
+
     </div>
   );
 };
